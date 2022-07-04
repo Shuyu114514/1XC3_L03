@@ -2,10 +2,6 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
-bool isValidMove (int x1, int x2, int y1, int y2, int board[8][8]) ;
-
-
-// ♔ ♕ ♖ ♗ ♘ ♙
 void showBoard (int board[8][9]) {
 
 void showBoard (int board[8][8]) {
@@ -54,9 +50,12 @@ void showBoard (int board[8][8]) {
 					printf("♙");
 			}
 		}
-		printf("║\n") ;
+		printf("│\n") ;
+		if (i < 7) {
+			printf("├─┼─┼─┼─┼─┼─┼─┼─┤\n") ;
+		}
 	}
-	printf("╚════════╝\n");
+	printf("└─┴─┴─┴─┴─┴─┴─┴─┘\n");
 }
 
 int main () {
@@ -89,14 +88,14 @@ int main () {
     
 	printf("Terminating...\n") ;
 	printf("Initializing Board...")	;
-	int board [8][8] = { {5, 4, 3, 1, 2, 3, 4, 5}
+	int board [8][8] = { {5, 4, 3, 2, 1, 3, 4, 5}
 				       , {6, 6, 6, 6, 6, 6, 6, 6}
 				 	   , {0, 0, 0, 0, 0, 0, 0, 0}
 					   , {0, 0, 0, 0, 0, 0, 0, 0}
 				       , {0, 0, 0, 0, 0, 0, 0, 0} 
 				       , {0, 0, 0, 0, 0, 0, 0, 0}
 				       , {6, 6, 6, 6, 6, 6, 6, 6}
-				       , {5, 4, 3, 1, 2, 3, 4, 5}
+				       , {5, 4, 3, 2, 1, 3, 4, 5}
 				       } ;
 	printf("Board Initialized!") ;
 	

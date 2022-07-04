@@ -229,7 +229,7 @@ bool isValidMove (int x1, int x2, int y1, int y2, int board[8][8]) {
 			return true;
 		}
 		// king
-	} else if (board[x1][x2] == 2) { 
+	} else if (board[x1][y2] == 2) { 
 		// queen
 	} else if (board[x1][y2] == 3) {  // bishop
 		while (true) {

@@ -1,30 +1,5 @@
 #include <stdio.h>
-//<<<<<<< HEAD
-//<<<<<<< HEAD
-/*
-int main () {
-	printf("Welcome to Terminal Chess!\n");
-	printf("Initializing Board...")	;
-	int board[8][8] = { {5, 4, 3, 2, 1, 3, 4, 5}
-				 , {6, 6, 6, 6, 6, 6, 6, 6}
-				 , {0, 0, 0, 0, 0, 0, 0, 0}
-				 , {0, 0, 0, 0, 0, 0, 0, 0}
-				 , {0, 0, 0, 0, 0, 0, 0, 0}
-				 , {0, 0, 0, 0, 0, 0, 0, 0} 
-				 , {0, 0, 0, 0, 0, 0, 0, 0}
-				 , {6, 6, 6, 6, 6, 6, 6, 6}
-				 , {5, 4, 3, 2, 1, 3, 4, 5}
-				 } ;
-	
-	printf("Board Initialized!");
-	
-	// rest of game...
-	
-	printf("Terminating...");
-=======
-*/
 #include <stdbool.h>
-//=======
 
 
 // ♔ ♕ ♖ ♗ ♘ ♙
@@ -54,31 +29,7 @@ void showBoard (int board[8][9]) {
 		printf("\n");
 	}
 }
-/*
-int main () {
-	printf("Welcome to Terminal Chess!\n");
-	printf("Initializing Board...")	;
-	int board [8][9]  = { {5, 4, 3, 1, 2, 3, 4, 5}
-		            , {6, 6, 6, 6, 6, 6, 6, 6}
-			    , {0, 0, 0, 0, 0, 0, 0, 0}
-			    , {0, 0, 0, 0, 0, 0, 0, 0}
-			    , {0, 0, 0, 0, 0, 0, 0, 0}
-			    , {0, 0, 0, 0, 0, 0, 0, 0} 
-			    , {0, 0, 0, 0, 0, 0, 0, 0}
-			    , {6, 6, 6, 6, 6, 6, 6, 6}
-			    , {5, 4, 3, 1, 2, 3, 4, 5}
-			    } ;
-	printf("Board Initialized!") ;
-	
-	showBoard(board);
-	
-	// rest of game...
-	
-	printf("Terminating...") ;
-	
-}
-//>>>>>>> origin/Show_Board
-*/
+
 int main () {
 	printf("Welcome to Terminal Chess!\n");
 	printf("Initializing Board...\n")	;
@@ -94,8 +45,6 @@ int main () {
   char buf[100];
   bool whitesMove = true;
 	printf("Board Initialized!\n") ;
-	
-// 	showBoard(board);
 
   printf("Enter `q` to quit at any time.\n");
   printf("Moves are entered as co-ordinate pairs, such as \"13-33\" \n");
@@ -110,5 +59,4 @@ int main () {
   } while (buf[0] != 'q' && buf[0] != 'Q') ;
     
 	printf("Terminating...\n") ;
-//>>>>>>> origin/Game_Logic
 }
